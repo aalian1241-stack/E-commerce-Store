@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftShop | Modern E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Swift<span>Shop</span></h1>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <div class="search-box">
+                    <input type="text" placeholder="Search products...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="cart-icon" onclick="toggleCart()">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <span>Limited Time Offer</span>
+            <h1>Big Deals on the Latest Products</h1>
+            <p>Upgrade your lifestyle with our premium curated collections.</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </header>
+
+    <section class="categories">
+        <div class="section-title">
+            <h2>Shop by Category</h2>
+        </div>
+        <div class="category-grid">
+            <div class="cat-card">
+                <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?w=500" alt="Electronics">
+                <h3>Electronics</h3>
+            </div>
+            <div class="cat-card">
+                <img src="https://images.unsplash.com/photo-1445205170230-053b830c6050?w=500" alt="Fashion">
+                <h3>Fashion</h3>
+            </div>
+            <div class="cat-card">
+                <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=500" alt="Home">
+                <h3>Home & Kitchen</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="section-title">
+            <h2>Featured Products</h2>
+        </div>
+        <div class="product-grid" id="product-list">
+            </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>SwiftShop</h3>
+                <p>Your one-stop shop for everything premium.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li>About Us</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 SwiftShop. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
